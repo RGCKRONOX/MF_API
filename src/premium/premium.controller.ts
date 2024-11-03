@@ -16,4 +16,9 @@ export class PremiumController {
   createPay(@Body() createPremiumDto: CreatePremiumDto) {
     return this.premiumService.createPay(createPremiumDto);
   }
+
+  @Post('/NC')
+  createNC(@Body() createPremiumDto: CreatePremiumDto) {
+    return this.premiumService.createNC(createPremiumDto);
+  }
 }
